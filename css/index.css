@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeed2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #769656;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 2px 0 #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
