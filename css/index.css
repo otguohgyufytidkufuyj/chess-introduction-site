@@ -21,27 +21,44 @@ header {
     z-index: 1000;
 }
 
+nav {
+    display: flex; /* Make nav a flex container */
+    justify-content: space-between; /* Distribute the logo and button with space between */
+    align-items: center; /* Vertically center both items */
+    width: 100%; /* Ensure nav takes full width of the header */
+}
+
 .logo {
     margin: 0;
-    font-size: 24px;
+    font-size: 48px;
     font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
 }
 
 .navbutton {
     background-color: #769656; /* Green */
     border: none;
     color: white;
-    padding: 0px 6px;
-    margin-left: -12px;
+    padding: 0px 8px;
+    margin-left: -8px;
     margin-right: 12px;
     text-align: center;
     text-decoration: none;
     font-size: 48px;
-    float: left;
     transition-duration: 0.4s;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 2px solid #769656;
 }
 
 .navbutton:hover {
-    background-color: #04AA6D; /* Green */
-    color: white;
+    background-color: #eeeed2;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.navbutton:active {
+    color: #769656;
 }
