@@ -5,10 +5,11 @@
 }
 
 body {
-    background-color: #eeeed2;
+    background-color: #769656;
 }
 
 header {
+    position: relative; /* Allows dropdown to be positioned relative to it */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +17,6 @@ header {
     padding: 10px 20px;
     color: white;
     box-shadow: 0 2px 0 #000000;
-    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -37,7 +37,6 @@ nav {
 
 .navbutton {
     background-color: #769656; /* Green */
-    border: none;
     color: white;
     padding: 0px 8px;
     margin-left: -8px;
@@ -50,15 +49,41 @@ nav {
     align-items: center;
     white-space: nowrap;
     border-radius: 8px;
-    border: 2px solid #769656;
+    border: #000000;
+    cursor: pointer;
 }
 
 .navbutton:hover {
-    background-color: #eeeed2;
     color: #000000;
-    border: 2px solid #000000;
 }
 
 .navbutton:active {
-    color: #769656;
+    background-color: #baca44;
+    transition: 0s;
+}
+
+.dropdown {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    top: 100%; /* Moves it right below the header */
+    left: 0;
+    width: 100%; /* Optional: Make it span the full width */
+    background-color: #eeeed2;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    z-index: 999; /* Ensures it appears above other content */
+    box-shadow: 0 2px 0 #000000;
+}
+
+.dropdown_expanded {
+    height: auto;
+}
+
+.cover {
+    background-image: url("../img/chessCover3.webp");
+    background-size: cover; /* Ensures it covers the whole element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    height: 600px; /* Adjust based on your needs */
+    width: 100%;
 }
