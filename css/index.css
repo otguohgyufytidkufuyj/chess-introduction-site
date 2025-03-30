@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    position: relative; /* Allows dropdown to be positioned relative to it */
+    position: sticky; /* Allows dropdown to be positioned relative to it */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +73,13 @@ nav {
     transition: height 0.3s ease-in-out;
     z-index: 999; /* Ensures it appears above other content */
     box-shadow: 0 2px 0 #000000;
+    justify-content: center; /* Equal spacing between buttons */
+    display: none; /* Start fully hidden */
+    flex-direction: row; /* Ensure flexbox layout works */
+    align-items: center; /* Vertically center buttons */
+    padding: 10px 0; /* Optional padding */
+    opacity: 0; /* Start fully transparent */
+    transition: height 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .dropdown_expanded {
@@ -86,4 +93,62 @@ nav {
     background-repeat: no-repeat;
     height: 600px; /* Adjust based on your needs */
     width: 100%;
+}
+
+#navSubButton1 {
+    flex: 1;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;
+    height: 80%;
+    background-color: #eeeed2;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#navSubButton2 {
+    flex: 1;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;
+    height: 80%;
+    background-color: #eeeed2;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#navSubButton3 {
+    flex: 1;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;
+    height: 80%;
+    background-color: #eeeed2;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    flex-direction: column;
+}
+
+#navSubButton4 {
+    flex: 1;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;
+    height: 80%;
+    background-color: #eeeed2;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    flex-direction: column;
+}
+
+span {
+    font-size: 100px;
+    margin-bottom: -20px;
+    margin-top: -20px;
 }
